@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>suhi</title>
-<meta name="description" content="suhi makes small, private apps. Home of Chillar.">
+<meta name="description" content="suhi makes small apps that do one thing well. Home of Chillar and SiteDay.">
 <meta property="og:title" content="suhi">
-<meta property="og:description" content="Small, private apps. Home of Chillar.">
+<meta property="og:description" content="Small apps that do one thing well.">
 <style>
   :root { --bg: #08091A; --fg: #F4F5FF; --muted: rgba(244,245,255,.55); --a: #8ED9C3; --b: #9AA0FF; --c: #F2A6D8; color-scheme: dark; }
   * { box-sizing: border-box; margin: 0; }
@@ -37,6 +37,9 @@
   a:hover, a:focus-visible { border-color: var(--a); background: rgba(142,217,195,.12); outline: none; }
   a.primary { background: var(--fg); color: var(--bg); border-color: transparent; }
   a.primary:hover, a.primary:focus-visible { background: var(--a); }
+  .soon { font-size: 16px; font-weight: 600; padding: 12px 22px; border-radius: 999px; border: 1px dashed rgba(255,255,255,.22); color: var(--muted); }
+  .soon em { font-style: normal; font-size: 12px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--a); margin-left: 6px; }
+  .more { font-size: 14px; color: rgba(244,245,255,.4); animation: fade 1.2s ease 1.6s both; }
   @keyframes fade { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
   footer { position: fixed; bottom: 20px; left: 0; right: 0; text-align: center; z-index: 2; font-size: 13px; color: rgba(244,245,255,.35); }
   @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01s !important; animation-iteration-count: 1 !important; } }
@@ -47,11 +50,12 @@
 <div class="grain"></div>
 <main>
   <h1 aria-label="suhi"><span>s</span><span>u</span><span>h</span><span>i</span><span class="dot" aria-hidden="true">.</span></h1>
-  <p>Small apps that respect your privacy.</p>
+  <p>Small apps that do one thing well.</p>
   <div class="links">
     <a class="primary" href="https://chillar.suhi.app">Chillar →</a>
-    <a href="mailto:suhi.apps@gmail.com">suhi.apps@gmail.com</a>
+    <span class="soon">SiteDay <em>soon</em></span>
   </div>
+  <small class="more">More on the way.</small>
 </main>
 <footer>© 2026 suhi</footer>
 <script>
