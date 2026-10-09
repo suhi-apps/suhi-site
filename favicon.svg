@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-15 0 230 230" width="230" height="230">
+  <defs>
+    <linearGradient id="pink" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F7B9DF"/><stop offset="1" stop-color="#C98BE8"/></linearGradient>
+    <linearGradient id="coneG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F2C98A"/><stop offset="1" stop-color="#D99A4E"/></linearGradient>
+    <pattern id="waffle" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="10" height="10" fill="url(#coneG)"/><path d="M0 0H10M0 0V10" stroke="#B9783A" stroke-width="1.6" opacity=".55"/>
+    </pattern>
+    <mask id="bite" maskUnits="userSpaceOnUse" x="0" y="0" width="200" height="230">
+      <rect width="200" height="230" fill="#fff"/>
+      <circle cx="146" cy="44" r="17" fill="#000"/><circle cx="157" cy="64" r="15" fill="#000"/><circle cx="131" cy="30" r="14" fill="#000"/>
+    </mask>
+  </defs>
+  <g transform="rotate(-16 100 120)">
+    <polygon points="58,100 142,100 100,215" fill="url(#waffle)"/>
+    <g mask="url(#bite)">
+      <path d="M50 100 Q48 28 100 26 Q152 28 150 100 Q141 114 131 102 Q122 120 111 103 Q100 126 89 103 Q78 118 69 102 Q59 114 50 100Z" fill="url(#pink)"/>
+      <g stroke-linecap="round" stroke-width="5"><path d="M74 58l7-5" stroke="#8ED9C3"/><path d="M104 46l8 3" stroke="#FFFFFF"/><path d="M118 82l5 7" stroke="#6268EC"/><path d="M88 80l-3 8" stroke="#FFE08A"/></g>
+    </g>
+  </g>
+</svg>

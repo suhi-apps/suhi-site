@@ -3,9 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>suhi</title>
-<meta name="description" content="suhi turns everyday problems into apps. Home of Chillar and SiteDay.">
-<meta property="og:title" content="suhi">
+<title>Suhi</title>
+<meta name="description" content="Suhi turns everyday problems into apps. Home of Chillar and SiteDay.">
+<meta property="og:title" content="Suhi">
+<meta property="og:image" content="https://suhi.app/favicon-192.png">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta property="og:description" content="Problems in, apps out.">
 <style>
   :root { --bg: #08091A; --fg: #F4F5FF; --muted: rgba(244,245,255,.55); --a: #8ED9C3; --b: #9AA0FF; --c: #F2A6D8; color-scheme: dark; }
@@ -27,6 +31,13 @@
   h1 span:nth-child(3) { animation-delay: .25s, -.8s, 2.0s; }
   h1 span:nth-child(4) { animation-delay: .35s, -1.2s, 2.3s; }
   h1 .dot { color: var(--a); background: none; -webkit-text-fill-color: var(--a); filter: drop-shadow(0 0 24px rgba(142,217,195,.8)); }
+  .mark { position: relative; display: grid; place-items: center; }
+  .mark h1 { position: relative; z-index: 1; }
+  .cone { position: absolute; z-index: 0; left: 0; top: 0; height: clamp(84px, 22vw, 250px); width: auto;
+    translate: -34% -30%; opacity: .92; filter: drop-shadow(0 30px 60px rgba(201,139,232,.35));
+    animation: coneIn 1.6s cubic-bezier(.16,1,.3,1) .1s both, bob 7s ease-in-out 1.7s infinite; pointer-events: none; }
+  @keyframes coneIn { from { opacity: 0; transform: translateY(40px) rotate(8deg) scale(.9); } to { opacity: .92; transform: none; } }
+  @keyframes bob { 0%, 100% { transform: rotate(0deg) translateY(0); } 50% { transform: rotate(-3deg) translateY(-10px); } }
   @keyframes rise { from { opacity: 0; transform: translateY(.35em) rotateX(70deg); filter: blur(18px); } to { opacity: 1; transform: none; } }
   @keyframes shine { to { background-position: -300% 0; } }
   @keyframes float { 0%, 100% { translate: 0 0; } 50% { translate: 0 -.04em; } }
@@ -49,7 +60,10 @@
 <canvas id="c" aria-hidden="true"></canvas>
 <div class="grain"></div>
 <main>
-  <h1 aria-label="suhi"><span>s</span><span>u</span><span>h</span><span>i</span><span class="dot" aria-hidden="true">.</span></h1>
+  <div class="mark">
+  <img class="cone" src="logo.svg" alt="" aria-hidden="true">
+  <h1 aria-label="Suhi"><span>S</span><span>u</span><span>h</span><span>i</span><span class="dot" aria-hidden="true">.</span></h1>
+  </div>
   <p>Problems in, apps out.</p>
   <div class="links">
     <a class="primary" href="https://chillar.suhi.app">Chillar →</a>
@@ -57,7 +71,7 @@
   </div>
   <small class="more">More on the way.</small>
 </main>
-<footer>© 2026 suhi</footer>
+<footer>© 2026 Suhi</footer>
 <script>
   // Soft drifting light orbs that lean toward the pointer.
   const c = document.getElementById('c'), x = c.getContext('2d');
