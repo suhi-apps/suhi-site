@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Suhi</title>
-<meta name="description" content="Suhi turns everyday problems into apps. Home of Chillar, SiteDay, Hootle, Suprabhatam and Interval.">
+<meta name="description" content="Suhi makes small, delightful apps. Home of Hootle, the menu bar owl that keeps your Mac awake. More on the way.">
 <meta property="og:title" content="Suhi">
 <meta property="og:image" content="https://suhi.app/favicon-192.png">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<meta property="og:description" content="Problems in, apps out.">
+<meta property="og:description" content="Home of Hootle for Mac. More on the way.">
 <style>
   :root { --bg: #08091A; --fg: #F4F5FF; --muted: rgba(244,245,255,.55); --a: #8ED9C3; --b: #9AA0FF; --c: #F2A6D8; color-scheme: dark; }
   * { box-sizing: border-box; margin: 0; }
@@ -48,15 +48,12 @@
   /* Sweep across the gradient and back rather than looping it, so the tile edge never shows as a seam in a letter. */
   @keyframes shine { from { background-position: 0% 0; } to { background-position: 100% 0; } }
   @keyframes float { 0%, 100% { translate: 0 0; } 50% { translate: 0 -.04em; } }
-  p { font-size: clamp(17px, 2.2vw, 22px); color: var(--muted); max-width: 32ch; line-height: 1.5; animation: fade 1.2s ease 1s both; }
   .links { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; animation: fade 1.2s ease 1.3s both; }
   a { color: var(--fg); text-decoration: none; font-size: 16px; font-weight: 600; padding: 12px 22px; border-radius: 999px;
     border: 1px solid rgba(255,255,255,.16); background: rgba(255,255,255,.04); backdrop-filter: blur(8px); transition: .25s; }
   a:hover, a:focus-visible { border-color: var(--a); background: rgba(142,217,195,.12); outline: none; }
   a.primary { background: var(--fg); color: var(--bg); border-color: transparent; }
   a.primary:hover, a.primary:focus-visible { background: var(--a); }
-  .soon { font-size: 16px; font-weight: 600; padding: 12px 22px; border-radius: 999px; border: 1px dashed rgba(255,255,255,.22); color: var(--muted); }
-  .soon em { font-style: normal; font-size: 12px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--a); margin-left: 6px; }
   .more { font-size: 14px; color: rgba(244,245,255,.4); animation: fade 1.2s ease 1.6s both; }
   @keyframes fade { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
   footer { position: relative; padding-top: 16px; text-align: center; z-index: 2; font-size: 13px; color: rgba(244,245,255,.35); }
@@ -71,13 +68,9 @@
   <div class="mark">
   <h1 aria-label="Suhi"><span>S</span><span>u</span><span>h</span><span>i</span><span class="dot" aria-hidden="true">.</span></h1>
   </div>
-  <p>Problems in, apps out.</p>
   <div class="links">
-    <a class="primary" href="https://chillar.suhi.app">Chillar →</a>
-    <a class="soon" href="https://siteday.suhi.app">SiteDay <em>soon</em></a>
-    <a class="soon" href="https://hootle.suhi.app">Hootle <em>soon</em></a>
-    <a class="soon" href="https://suprabhatam.suhi.app">Suprabhatam <em>soon</em></a>
-    <a class="soon" href="https://interval.suhi.app">Interval <em>soon</em></a>
+    <a class="primary" href="https://apps.apple.com/app/id6824888959">Hootle on the Mac App Store →</a>
+    <a href="https://hootle.suhi.app">About Hootle</a>
   </div>
   <small class="more">More on the way.</small>
 </main>
